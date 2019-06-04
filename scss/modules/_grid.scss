@@ -1,0 +1,47 @@
+.main{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 100vh;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:not(:last-child){
+        border-right: 1px solid black;
+    }   
+}
+.cuadros-container{
+    height: 90%;
+    background-color: aqua;
+}
+.column-footer{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.siglo-text{
+    font-size: 3rem
+}
+
+.cuadro{
+    width: 90%;
+    &-img{
+        width: 100%;
+    }
+    &-descripcion{
+        height: 30px;
+        background-color: red;
+    }
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
