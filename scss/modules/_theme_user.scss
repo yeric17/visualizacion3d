@@ -1,0 +1,35 @@
+.gallery-init{
+    background: linear-gradient(to right, color("orange","lighten-3"),color("amber","lighten-1"));
+}
+.nav-main{
+    background-color: color("orange", "darken-2");
+    z-index: 100;
+}
+.column{
+    &:not(:last-child){
+        border-right: 4px solid  rgba(black, .3);
+    }
+}
+.column-footer{
+    background: rgba(black, .4);
+}
+.cuadro-descripcion{
+    background-color: color("orange","lighten-5");
+}
+.cuadro{
+    @extend .z-depth-1;
+    transition: .5s;
+    &:hover{
+        @extend .z-depth-4;
+    }
+}
+
+.ismo-section{
+    height: 100%;
+    overflow-x: scroll;
+    border-right: 2px solid color("gray","lighten-3");
+    
+}
+.ismo-description{
+    padding: 1rem;
+}
