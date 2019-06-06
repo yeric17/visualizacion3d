@@ -45,7 +45,7 @@
 .artist{
     width: 320px;
     //padding: .25rem;
-    background-image: url(/public/img/card_bg.png);
+    background-image: url(../../public/img/card_bg.png);
     
     background-position: left top;
     &:not(:last-child){
