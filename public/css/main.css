@@ -7429,28 +7429,62 @@ input[type=range]::-ms-thumb {
 .ismo-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-  grid-template-columns: 1fr 3fr;
-  -ms-grid-rows: calc(100vh - 4rem);
-  grid-template-rows: calc(100vh - 4rem); }
+  -ms-grid-columns: 450px 1fr;
+  grid-template-columns: 450px 1fr;
+  -ms-grid-rows: 8rem calc(99vh - 12rem);
+  grid-template-rows: 8rem calc(99vh - 12rem); }
 
 .ismo-artists {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 400px;
-  grid-gap: .5rem;
-  padding: 1rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 2rem; }
+
+.ismo-section {
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3; }
+
+.ismo-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.ismo-title {
+  text-align: center; }
 
 .artist {
-  width: 100%;
-  height: 100%; }
-  .artist-img {
-    height: 100%;
-    background-image: url(attr(data-image string));
-    background-size: cover;
-    background-position: center top; }
+  width: 320px;
+  background-image: url(/public/img/card_bg.png);
+  background-position: left top; }
+  .artist:not(:last-child) {
+    margin-right: 4rem; }
+
+.grid-gallery {
+  display: -ms-grid;
+  display: grid;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  grid-gap: 1rem;
+  padding: 1rem; }
 
 .column {
   display: -webkit-box;
@@ -7550,11 +7584,11 @@ img {
 
 #cubismo {
   left: 0;
-  top: 20rem; }
+  top: 18rem; }
 
 #pop-art {
   right: 50%;
-  top: 4rem;
+  top: 2rem;
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
   transform: translateX(50%); }
@@ -7575,7 +7609,9 @@ img {
 
 .nav-main {
   background-color: #f57c00;
-  z-index: 100; }
+  z-index: 100;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .column:not(:last-child) {
   border-right: 4px solid rgba(0, 0, 0, 0.3); }
@@ -7591,6 +7627,25 @@ img {
   -o-transition: .5s;
   transition: .5s; }
 
+.ismo-title {
+  background-image: url(/public/img/card_bg.png);
+  background-size: cover;
+  background-position: right 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  margin: 0;
+  padding: 1rem; }
+
 .ismo-section {
   height: 100%;
   overflow-x: scroll;
@@ -7598,3 +7653,14 @@ img {
 
 .ismo-description {
   padding: 1rem; }
+
+.card-reveal {
+  background: -webkit-linear-gradient(45deg, #F44336, #9c27b0);
+  background: -o-linear-gradient(45deg, #F44336, #9c27b0);
+  background: linear-gradient(45deg, #F44336, #9c27b0);
+  color: white; }
+  .card-reveal .card-title {
+    color: white; }
+
+.ismo-artists {
+  background-color: #eeeeee; }

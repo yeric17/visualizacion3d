@@ -4,6 +4,8 @@
 .nav-main{
     background-color: color("orange", "darken-2");
     z-index: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .column{
     &:not(:last-child){
@@ -23,7 +25,19 @@
         @extend .z-depth-4;
     }
 }
-
+.ismo-title{
+    background-image: url(/public/img/card_bg.png);
+    background-size: cover;
+    background-position: right 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    margin: 0;
+    padding: 1rem;
+}
 .ismo-section{
     height: 100%;
     overflow-x: scroll;
@@ -33,3 +47,18 @@
 .ismo-description{
     padding: 1rem;
 }
+
+.card-reveal{
+    background: linear-gradient(
+        45deg, color("red","base"), color("purple","base")
+    );
+    color:white;
+    .card-title{
+        color: white;
+    }
+}
+.ismo-artists{
+    
+    background-color: color("grey","lighten-3");
+}
+

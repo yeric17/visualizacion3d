@@ -17,30 +17,54 @@
 }
 .ismo-container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: calc(100vh - 4rem);
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 8rem calc(99vh - 12rem);
     
 }
 .ismo-artists{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 400px;
-    grid-gap: .5rem;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    
 }
-
+.ismo-section{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.ismo-picture{
+    display: flex;
+    justify-content: center;
+}
+.ismo-title{
+    //grid-column-start: 1;
+    //grid-column-end: 5;
+    
+    text-align: center;
+}
 .artist{
-    width: 100%;
-    height: 100%;
-    &-img{
-        
-        height: 100%;
-        background-image: url(attr(data-image string));
-        background-size: cover;
-        background-position: center top;
+    width: 320px;
+    //padding: .25rem;
+    background-image: url(/public/img/card_bg.png);
+    
+    background-position: left top;
+    &:not(:last-child){
+        margin-right: 4rem;
     }
 }
 
+.grid-gallery{
+    display: grid;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    align-items: start;
+    grid-gap: 1rem;
+    padding: 1rem;
+
+}
 
 .column{
     display: flex;
@@ -132,11 +156,11 @@ img{
 #cubismo{
     left: 0;
     
-    top: 20rem;
+    top: 18rem;
 }
 #pop-art{
     right: 50%;
-    top: 4rem;
+    top: 2rem;
     transform: translateX(50%);
 }
 #postmodernismo{

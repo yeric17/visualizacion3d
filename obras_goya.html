@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="neoclasicismo.html">Neoclasicismo</a></li>
+        <li><a href="romanticismo.html">Romanticismo</a></li>
+        <li><a href="impresionismo.html">Impresionismo</a></li>
+        <li><a href="puntillismo.html">Puntillismo</a></li>
+        <li><a href="cubismo.html">Cubismo</a></li>
+        <li><a href="popart.html">Pop Art</a></li>
+        <li><a href="postmodernismo.html">Postmodernismo</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper nav-main z-depth-3 hoverable">
+            <a href="index.html" class="brand-logo">Historia del Arte</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Vanguardias<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="grid-gallery">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" data-caption="El anciano de los días (1794)"
+                        src="/public/img/obras/william_blake/the-ancient-of-days.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" data-caption="Isaac Newton (1795)"
+                        src="/public/img/obras/william_blake/newton-williamblake.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" data-caption="The Sun in His Wrath (1816-1820)"
+                        src="/public/img/obras/william_blake/the-sun-in-his-wrath.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" data-caption="The Goblin (1816-1820)"
+                        src="/public/img/obras/william_blake/the-goblin.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" data-caption="The Spirit of Plato (1816-1820)"
+                        src="/public/img/obras/william_blake/the-spirit-of-plato.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/bin/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
